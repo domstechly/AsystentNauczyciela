@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Asystent Nauczyciela</string>
+    <string name="button">Dodaj przedmiot</string>
+    <string name="buttonStudent">Dodaj ucznia</string>
+    <string name="buttonaddStudent">Dodaj ucznów</string>
+    <string name="Updbutton">Zaktualizuj</string>
+    <string name="AddUpdbutton">Potwierdź</string>
+    <string name="cos">cos</string>
+    <string-array name="dni_tygodnia">
+        <item>Poniedziałek</item>
+        <item>Wtorek</item>
+        <item>Sroda</item>
+        <item>Czwartek</item>
+        <item>Piatek</item>
+        <item>Sobota</item>
+        <item>Niedziela</item>
+    </string-array>
+    <string-array name="hours">
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+    </string-array>
+    <string-array name="minutes">
+        <item>00</item>
+        <item>15</item>
+        <item>30</item>
+        <item>45</item>
+    </string-array>
+</resources>

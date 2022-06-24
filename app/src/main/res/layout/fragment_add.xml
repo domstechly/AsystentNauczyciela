@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    android:padding="24dp"
+    tools:context=".fragments.add.AddFragment">
+
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button_back"
+        android:text="@string/button"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/idEdtPrzedmiotName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:height="48dp"
+        android:hint="Nazwa przedmiotu"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_record"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_mic_black_48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idEdtPrzedmiotName"
+        app:layout_constraintEnd_toEndOf="@+id/idEdtPrzedmiotName"
+        app:layout_constraintTop_toTopOf="@+id/idEdtPrzedmiotName" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEdtPrzedmiotName"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="10dp"
+            android:text="Poniedziałek" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutGStart"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayoutMStart"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewGStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutMStart"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutGStart"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayoutGStart"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutGStart"
+        app:layout_constraintVertical_bias="0.237">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewMStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutGStop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout6"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayoutGStart">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewGStop"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutGStop"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayoutGStop"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutGStop"
+        app:layout_constraintVertical_bias="0.0">
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewMStop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/dkr"
+        android:layout_width="16dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text=":"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutMStart"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayoutMStart"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayoutGStart"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutMStart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/dkr2"
+        android:layout_width="16dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text=":"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:enabled="false"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayoutGStop"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayout6"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayoutGStop"
+        app:layout_constraintTop_toTopOf="@+id/textInputLayoutGStop"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <EditText
+        android:id="@+id/dkr3"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="do"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dkr2"
+        app:layout_constraintEnd_toStartOf="@+id/textInputLayoutMStart"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayoutGStart"
+        app:layout_constraintTop_toBottomOf="@+id/dkr"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

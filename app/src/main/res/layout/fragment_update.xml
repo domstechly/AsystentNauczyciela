@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black_shade_1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="24dp">
+
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/custom_button_back"
+        android:text="@string/Updbutton"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/update_btn_record"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_mic_black_48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/idUpdPrzedmiotName"
+        app:layout_constraintEnd_toEndOf="@+id/idUpdPrzedmiotName"
+        app:layout_constraintTop_toTopOf="@+id/idUpdPrzedmiotName" />
+
+    <EditText
+        android:id="@+id/idUpdPrzedmiotName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:height="48dp"
+        android:hint="Nazwa przedmiotu"
+        android:minHeight="48dp"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UpdtextInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idUpdPrzedmiotName"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/UpdautoCompleteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="10dp"
+            android:text="Poniedziałek" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UpdtextInputLayoutGStart"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/UpdtextInputLayoutMStart"
+        app:layout_constraintStart_toStartOf="@+id/UpdtextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/UpdtextInputLayout">
+
+        <AutoCompleteTextView
+            android:id="@+id/UpdautoCompleteTextViewGStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UpdtextInputLayoutMStart"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/UpdtextInputLayoutGStart"
+        app:layout_constraintEnd_toEndOf="@+id/UpdtextInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/UpdtextInputLayoutGStart"
+        app:layout_constraintTop_toTopOf="@+id/UpdtextInputLayoutGStart"
+        app:layout_constraintVertical_bias="0.237">
+
+        <AutoCompleteTextView
+            android:id="@+id/UpdautoCompleteTextViewMStart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UpdtextInputLayoutGStop"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toStartOf="@+id/UpdtextInputLayout6"
+        app:layout_constraintStart_toStartOf="@+id/UpdtextInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/UpdtextInputLayoutGStart">
+
+        <AutoCompleteTextView
+            android:id="@+id/UpdautoCompleteTextViewGStop"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="8"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/UpdtextInputLayout6"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense.ExposedDropdownMenu"
+        android:layout_width="120dp"
+        android:layout_height="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/UpdtextInputLayoutGStop"
+        app:layout_constraintEnd_toEndOf="@+id/UpdtextInputLayout"
+        app:layout_constraintStart_toEndOf="@+id/UpdtextInputLayoutGStop"
+        app:layout_constraintTop_toTopOf="@+id/UpdtextInputLayoutGStop"
+        app:layout_constraintVertical_bias="0.0">
+
+        <AutoCompleteTextView
+            android:id="@+id/UpdautoCompleteTextViewMStop"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inputType="none"
+            android:padding="0dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+        android:id="@+id/dkr"
+        android:layout_width="16dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text=":"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/UpdtextInputLayoutMStart"
+        app:layout_constraintEnd_toStartOf="@+id/UpdtextInputLayoutMStart"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/UpdtextInputLayoutGStart"
+        app:layout_constraintTop_toTopOf="@+id/UpdtextInputLayoutMStart"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/dkr2"
+        android:layout_width="16dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text=":"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/UpdtextInputLayoutGStop"
+        app:layout_constraintEnd_toStartOf="@+id/UpdtextInputLayout6"
+        app:layout_constraintStart_toEndOf="@+id/UpdtextInputLayoutGStop"
+        app:layout_constraintTop_toTopOf="@+id/UpdtextInputLayoutGStop"
+        app:layout_constraintVertical_bias="0.521" />
+
+    <EditText
+        android:id="@+id/dkr3"
+        android:layout_width="50dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:inputType="none"
+        android:text="do"
+        android:enabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/dkr2"
+        app:layout_constraintEnd_toStartOf="@+id/UpdtextInputLayoutMStart"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toEndOf="@+id/UpdtextInputLayoutGStart"
+        app:layout_constraintTop_toBottomOf="@+id/dkr"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

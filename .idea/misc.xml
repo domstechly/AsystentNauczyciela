@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/drawable/custom_button_back.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/drawable/ic_add.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/drawable/ic_launcher_background.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.20729166666666668" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/custom_row.xml" value="0.5356550580431177" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/custom_row_marks.xml" value="0.28229166666666666" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/custom_row_student.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/custom_row_studentsinclass.xml" value="0.45007235890014474" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/cuton_row_studentsinclass.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/dropdown_days.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_add.xml" value="0.25" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_add_mark.xml" value="0.18333333333333332" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_add_person.xml" value="0.1921875" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_add_student.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_add_student_toclass.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_list.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_list_addstudent.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_list_marks.xml" value="0.19895833333333332" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_list_student.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_update.xml" value="0.19114583333333332" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_update_addstudent.xml" value="0.19157608695652173" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/layout/fragment_update_student.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/menu/add_menu.xml" value="0.19427083333333334" />
+        <entry key="..\:/Users/sdomi/AndroidStudioProjects/Projekt3/AsystentNauczyciela/app/src/main/res/menu/delete_menu.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
